@@ -1,6 +1,6 @@
 # BPL-Dream 11 Cricket Team
 
-live link()
+live link(https://bpl-cricket-riyad.surge.sh/)
 
 ## Description
 
