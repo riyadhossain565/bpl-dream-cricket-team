@@ -1,9 +1,13 @@
 import bannerMain from "../../assets/banner-main.png";
+import PropTypes from "prop-types";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Banner = ({ addCoins }) => {
   const handleClaimCoin = () => {
     const newCoins = 6000000;
     addCoins(newCoins);
+    toast.success("Credit Added to your Account");
   };
 
   return (
@@ -34,6 +38,10 @@ const Banner = ({ addCoins }) => {
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  addCoins: PropTypes.number.isRequired,
 };
 
 export default Banner;

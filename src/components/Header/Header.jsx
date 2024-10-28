@@ -1,5 +1,6 @@
 import logo from "../../assets/logo.png";
 import coin from "../../assets/coin.png";
+import PropTypes from "prop-types";
 
 const Header = ({ coins }) => {
   return (
@@ -32,6 +33,10 @@ const Header = ({ coins }) => {
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  coins: PropTypes.number.isRequired,
 };
 
 export default Header;
