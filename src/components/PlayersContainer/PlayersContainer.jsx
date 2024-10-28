@@ -48,7 +48,7 @@ const PlayersContainer = ({
   };
 
   return (
-    <div>
+    <div className="mb-60">
       <div className="w-5/6 mx-auto my-10 pt-4 flex justify-between">
         <div>
           <h1 className="text-2xl font-bold">

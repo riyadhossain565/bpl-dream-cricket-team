@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import PlayersContainer from "./components/PlayersContainer/PlayersContainer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [coins, setCoins] = useState(0);
@@ -49,6 +50,7 @@ const App = () => {
         handleDecreaseCoins={handleDecreaseCoins}
         coins={coins}
       ></PlayersContainer>
+      <Footer></Footer>
       <ToastContainer position="top-center" />
     </div>
   );
